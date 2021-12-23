@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +17,7 @@
   <body>
     <!-- page header -->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <!--Logo-->
         <a class="logo no-link" href="./index.html"
           ><span class="name-company-web">Web</span>Studio</a
@@ -24,53 +25,57 @@
         <!--navigation-->
         <nav>
           <ul class="site-nav list">
-            <li><a class="link current no-link" href="#">Студия</a></li>
-            <li><a class="link no-link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="link no-link" href="">Контакты</a></li>
+            <li class="header-item"><a class="link current no-link" href="#">Студия</a></li>
+            <li class="header-item">
+              <a class="link no-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item"><a class="link no-link" href="">Контакты</a></li>
           </ul>
         </nav>
         <!--contact-->
-        <ul class="header-contact list">
-          <li><a class="link no-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link no-link" href="tel:+380961111111">+38096 111 11 11</a></li>
-        </ul>
+        <div class="header-cont">
+          <ul class="header-contact list">
+            <li class="header-contact-item">
+              <a class="link no-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="header-contact-item">
+              <a class="link no-link" href="tel:+380961111111">+38096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <!-- Hero -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
-            Эффективные решения<br />
-            для вашего бизнеса
-          </h1>
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button">Заказать услугу</button>
         </div>
       </section>
       <!---Feature-->
       <section class="feature">
-        <div class="container">
+        <div class="container pt">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="feature-list list">
-            <li>
+            <li class="feature-item">
               <h3 class="feature-title">Внимание к деталям</h3>
               <p class="feature-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="feature-item">
               <h3 class="feature-title">Пунктуальность</h3>
               <p class="feature-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="feature-item">
               <h3 class="feature-title">Планирование</h3>
               <p class="feature-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="feature-item">
               <h3 class="feature-title">Современные технологии</h3>
               <p class="feature-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -81,16 +86,16 @@
       </section>
       <!--work-->
       <section class="work">
-        <div class="container">
+        <div class="container pt pb">
           <h2 class="work-title">Чем мы занимаемся?</h2>
           <ul class="work-list list">
-            <li>
+            <li class="work-list-item">
               <img src="./images/box1-min.jpg" width="370" alt="Компьютер на столе" />
             </li>
-            <li>
+            <li class="work-list-item">
               <img src="./images/box2-min.jpg" width="370" alt="Мобильное приложение" />
             </li>
-            <li>
+            <li class="work-list-item">
               <img src="./images/box3-min.jpg" width="370" alt="Палитра на планшете" />
             </li>
           </ul>
@@ -98,7 +103,7 @@
       </section>
       <!--team-->
       <section class="team">
-        <div class="container">
+        <div class="container pt pb">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-card">
@@ -106,6 +111,7 @@
               <h3 class="team-card-title">Игорь Демьяненко</h3>
               <p class="work-position" lang="en">Product Designer</p>
             </li>
+
             <li class="team-card">
               <img src="./images/r-min.jpg" width="270" alt="Ольга Репина" />
               <h3 class="team-card-title">Ольга Репина</h3>
@@ -126,8 +132,8 @@
       </section>
     </main>
     <footer class="footer">
+      <!-- footer -->
       <div class="container">
-        <!-- footer -->
         <!--Logo-->
         <a class="logo no-link" href="./index.html"
           ><span class="name-company-web">Web</span>Studio</a
