@@ -26,6 +26,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 /* ----------  END RESET  ---------- */
 
@@ -42,6 +44,7 @@ body {
 
 .no-link {
   text-decoration: none;
+  display: block;
 }
 
 .visually-hidden {
@@ -65,13 +68,7 @@ body {
   margin-right: auto;
   /* outline: 1px solid red; */
 }
-.pt {
-  padding-top: 94px;
-}
 
-.pb {
-  padding-bottom: 94px;
-}
 /* ----------  END GENERAL SETTINGS ---------- */
 /* ----------  PAGE HEADER  ---------- */
 
@@ -199,6 +196,7 @@ body {
 /* ----------  FEATURE  ---------- */
 
 .feature {
+  padding-top: 94px;
 }
 
 .feature-list {
@@ -207,6 +205,10 @@ body {
 .feature-item {
   width: 270px;
   margin-right: 30px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
 }
 
 .feature-title {
@@ -228,6 +230,11 @@ body {
 
 /* ----------  WORK  ---------- */
 
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .work-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -247,7 +254,10 @@ body {
   margin-left: 30px;
 }
 /* ----------  TEAM  ---------- */
+
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
@@ -266,7 +276,6 @@ body {
 }
 
 .team-card {
-  padding-bottom: 30px;
   width: calc((100% - 120px) / 4);
   margin-right: 30px;
   background-color: #ffffff;
@@ -293,6 +302,9 @@ body {
   color: #757575;
 }
 
+.team-card-discription {
+  padding-bottom: 30px;
+}
 /* ----------  FOOTER  ---------- */
 
 .footer {
@@ -305,8 +317,11 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
+.footer .logo {
+  margin-bottom: 20px;
+}
 .address {
-  margin-top: 20px;
   font-style: normal;
 }
 .footer .link {
@@ -329,15 +344,12 @@ body {
 /* ПОРТФОЛИО */
 
 .portfolio-page {
+  padding-top: 94px;
 }
 /* ----------  FILTER BUTTON  ---------- */
 
-.button-section {
-}
-
 .filter-list {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -375,19 +387,19 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-
-  padding-bottom: 94px;
 }
 
 .projects-list .item {
   width: calc((100% - 60) / 3);
-  padding-bottom: 20px;
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: #ffffff;
   border-bottom: 1px solid #eeeeee;
 }
 
+.project-description {
+  padding-bottom: 20px;
+}
 .projects-list .item:nth-child(3n) {
   margin-right: 0;
 }
